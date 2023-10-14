@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Candidate Excel Upload</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <div style="background-color: rgb(217, 221, 141); margin: 50px;">
+      <h1 style="margin-left: 20px;">Add from Excel</h1>
+  
+  </div>
+
+  <div style="margin: 50px; background-color: rgb(250, 250, 250); padding: 200px; margin-top: -48px; border: solid 1px;">
+    <form action="http://localhost:3000/api/upload" method="POST" enctype="multipart/form-data">
+          <div class="speech-bubble">
+            <div class="happy">
+              <label class="file-input-container">
+                  <input class="file-input" style="margin-left: 500px;" type="file" name="excelFile" accept=".xlsx, .xls" onchange="showUploadButton(this)">
+                  <span class="upload-icon">&#8679;</span>
+              </label>
+              
+              <p style="margin-left: 480px;">Upload a .xlsx or .xls file here</p>
+              <p id="selectedFileName" style="margin-left: 480px; display: none;">Selected file: </p>
+              <button id="uploadButton" style="display: none; margin: 20px; margin-left: 490px; width: 200px; background-color: rgb(155, 241, 119); border-radius: 10px; height: 40px;" type="submit" >Submit</button>
+            </div>
+              <div class="message">
+                  <p></p>
+              </div>
+          </div>
+      </form>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

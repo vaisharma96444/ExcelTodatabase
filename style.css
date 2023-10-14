@@ -1,0 +1,69 @@
+.messgae{
+    position: relative;
+    width: 200px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+
+  }
+  .speech-bubble {
+    position: relative;
+    width: 1200px;
+    height: 150px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    margin-top: -100px;
+    margin-left: -100px;
+  }
+
+  .file-input-container {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #3d3d3d;
+    cursor: pointer;
+    margin-left: 550px;
+  }
+
+  .file-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+
+  .upload-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+  }
+
+  .speech-bubble-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  .add-from-excel-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f2ecec;
+    color: #efdcdc;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
